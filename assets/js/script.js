@@ -18,16 +18,19 @@
 const emailUtente = prompt('Inserisci la tua email:');
 
 // controllo se la mail inserita è presente nella lista con le mail autorizzate ad accedere
-const emailAutorizzate = ['a@mail.it', 'b@mail.it', 'c@mail.it'];
-console.log(emailAutorizzate);
+const emailsAutorizzate = ['a@mail.it', 'b@mail.it', 'c@mail.it'];
 
-    // se è presente nella lista presento un alert di benvenuto e inizializzo tramite prompt il gioco
-        // tramite un prompt chiedo all'utente di lanciare i dadi o di annullare l'operazione
-            // se accetta di giocare
-                // genero un numero casuale per l'utente
-                // genero un numero casuale per il computer
-                // paragono i risultati casuali e definisco il vincitore
-                // stampo in pagina il vincitore
-            // se non accetta di giocare 
-                // saluto l'utente tramite un alert
-    // se non è nella lista invio un alert con l'avviso di respingimento
+// se è presente nella lista presento un alert di benvenuto e inizializzo tramite prompt il gioco
+if (emailsAutorizzate.includes(emailUtente)) {
+    // Gioco dei dadi
+    alert('Accesso consentito. Benvenuto al Gioco dei Dadi!');
+}
+    // tramite un prompt chiedo all'utente di lanciare i dadi o di annullare l'operazione
+        // se accetta di giocare
+            // genero un numero casuale per l'utente
+            // genero un numero casuale per il computer
+            // paragono i risultati casuali e definisco il vincitore
+            // stampo in pagina il vincitore
+        // se non accetta di giocare 
+            // saluto l'utente tramite un alert
+// se non è nella lista invio un alert con l'avviso di respingimento
