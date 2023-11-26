@@ -16,8 +16,11 @@
 
 // tramite un prompt chiedo all'utente di inserire la propria mail
 const emailUtente = prompt('Inserisci la tua email:');
-console.log(emailUtente);
+
 // controllo se la mail inserita è presente nella lista con le mail autorizzate ad accedere
+const emailAutorizzate = ['a@mail.it', 'b@mail.it', 'c@mail.it'];
+console.log(emailAutorizzate);
+
     // se è presente nella lista presento un alert di benvenuto e inizializzo tramite prompt il gioco
         // tramite un prompt chiedo all'utente di lanciare i dadi o di annullare l'operazione
             // se accetta di giocare
