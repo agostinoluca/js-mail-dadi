@@ -10,7 +10,8 @@
     -prompt / alert (funzioni);
     -if / if else / else (condizioni);
     -< > (operatori);
-    -array (oggetto).
+    -array (oggetto);
+    -\n (escape, testo a capo)
 */
 
 
@@ -27,13 +28,23 @@ if (emailsAutorizzate.includes(emailUtente)) {
 }
     // tramite un prompt chiedo all'utente di lanciare i dadi o di annullare l'operazione
     const lancioDadi = confirm('Vuoi lanciare i dadi?');
+    
+    // se accetta di giocare
+    if (lancioDadi) {
+        
+        // genero un numero casuale per l'utente
+        const dadoGiocatore = Math.floor(Math.random() * 6) + 1;
 
+        // genero un numero casuale per il computer
+        const dadoComputer = Math.floor(Math.random() * 6) + 1;
 
-        // se accetta di giocare
-            // genero un numero casuale per l'utente
-            // genero un numero casuale per il computer
-            // paragono i risultati casuali e definisco il vincitore
-            // stampo in pagina il vincitore
-        // se non accetta di giocare 
-            // saluto l'utente tramite un alert
+        // paragono i risultati casuali ottenuti
+        alert(`Giocatore: ${dadoGiocatore}\nComputer: ${dadoComputer}`);
+
+        // definisco il vincitore
+
+    }
+        // stampo in pagina il vincitore
+    // se non accetta di giocare 
+        // saluto l'utente tramite un alert
 // se non è nella lista invio un alert con l'avviso di respingimento
