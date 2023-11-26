@@ -25,7 +25,7 @@ const emailsAutorizzate = ['a', 'a@mail.it', 'b@mail.it', 'c@mail.it'];
 if (emailsAutorizzate.includes(emailUtente)) {
     // Gioco dei dadi
     alert('Accesso consentito. Benvenuto al Gioco dei Dadi!');
-}
+
     // tramite un prompt chiedo all'utente di lanciare i dadi o di annullare l'operazione
     const lancioDadi = confirm('Vuoi lanciare i dadi?');
     
@@ -47,4 +47,8 @@ if (emailsAutorizzate.includes(emailUtente)) {
         // stampo in pagina il vincitore
     // se non accetta di giocare 
         // saluto l'utente tramite un alert
+
 // se non è nella lista invio un alert con l'avviso di respingimento
+} else {
+    alert('Accesso negato. La tua email non è autorizzata ad accedere al gioco.');
+}
