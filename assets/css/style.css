@@ -3,3 +3,26 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.win,
+.lose,
+.draw {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: auto;
+    height: 500px;
+    width: 1000px;
+}
+
+.win {
+    background-image: url('../img/win.jpg');
+}
+
+.lose {
+    background-image: url('../img/lose.jpg');
+}
+
+.draw {
+    background-image: url('../img/draw.jpg');
+}

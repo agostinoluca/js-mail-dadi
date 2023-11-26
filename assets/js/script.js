@@ -5,7 +5,7 @@
         Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
     ##Tools:
-    -console.log (metodi);
+    -console.log / .getElementById (metodi);
     -let / const (variabili);
     -prompt / alert (funzioni);
     -if / if else / else (condizioni);
@@ -14,6 +14,8 @@
     -\n (escape, testo a capo)
 */
 
+// seleziono il container inserito in pagina html
+const background = document.getElementById('container');
 
 // tramite un prompt chiedo all'utente di inserire la propria mail
 const emailUtente = prompt('Inserisci la tua email:');
@@ -42,6 +44,16 @@ if (emailsAutorizzate.includes(emailUtente)) {
         alert(`Giocatore: ${dadoGiocatore}\nComputer: ${dadoComputer}`);
 
         // definisco il vincitore
+        if (dadoGiocatore > dadoComputer) {
+            alert('Hai vinto!');
+            background.classList.add('win');
+        } else if (dadoComputer > dadoGiocatore) {
+            alert('Il Computer ha vinto!');
+            background.classList.add('lose');
+        } else {
+            alert('Hai pareggiato!');
+            background.classList.add('draw');
+        }
 
     }
         // stampo in pagina il vincitore
