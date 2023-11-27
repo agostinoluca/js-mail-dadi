@@ -43,20 +43,22 @@ if (emailsAutorizzate.includes(emailUtente)) {
         // paragono i risultati casuali ottenuti
         alert(`Giocatore: ${dadoGiocatore}\nComputer: ${dadoComputer}`);
 
+        // collego una classe applicata ad un h1 dell'html per stampare il risultato in pagina
+        const result = document.querySelector('.text');
+
         // definisco il vincitore
         if (dadoGiocatore > dadoComputer) {
-            alert('Hai vinto!');
             background.classList.add('win');
+            result.textContent = ('Hai vinto!')
         } else if (dadoComputer > dadoGiocatore) {
-            alert('Il Computer ha vinto!');
             background.classList.add('lose');
+            result.textContent = ('Hai perso!')
         } else {
-            alert('Hai pareggiato!');
             background.classList.add('draw');
+            result.textContent = ('Pareggio!')
         }
 
     }
-        // stampo in pagina il vincitore
     // se non accetta di giocare 
         // saluto l'utente tramite un alert
 

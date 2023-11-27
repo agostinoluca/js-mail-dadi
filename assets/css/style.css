@@ -11,9 +11,22 @@
     background-position: center;
     background-repeat: no-repeat;
     margin: auto;
-    height: 500px;
-    width: 1000px;
+    height: 600px;
+    width: 900px;
+    position: relative;
 }
+
+.text {
+    color: red;
+    text-align: center;
+    text-shadow: 2px 2px 3px black;
+    font-style: italic;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%) ;
+    font-size: 5rem;
+} 
 
 .win {
     background-image: url('../img/win.jpg');
