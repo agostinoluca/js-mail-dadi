@@ -6,8 +6,9 @@
 
     ##Tools:
     -console.log / .getElementById (metodi);
+    -.textContent (proprietà);
     -let / const (variabili);
-    -prompt / alert (funzioni);
+    -prompt / alert / $() (funzioni);
     -if / if else / else (condizioni);
     -< > (operatori);
     -array (oggetto);
@@ -49,19 +50,19 @@ if (emailsAutorizzate.includes(emailUtente)) {
         // definisco il vincitore
         if (dadoGiocatore > dadoComputer) {
             background.classList.add('win');
-            result.textContent = ('Hai vinto!')
+            result.textContent = ('Hai vinto!');
         } else if (dadoComputer > dadoGiocatore) {
             background.classList.add('lose');
-            result.textContent = ('Hai perso!')
+            result.textContent = ('Hai perso!');
         } else {
             background.classList.add('draw');
-            result.textContent = ('Pareggio!')
+            result.textContent = ('Pareggio!');
         }
 
     // se non accetta di giocare 
     } else {
         // saluto l'utente tramite un alert
-        alert('Va bene, giocheremo la prossima volta.\nArrivederci!')
+        alert('Va bene, giocheremo la prossima volta.\nArrivederci!');
     }
 
 // se non è nella lista invio un alert con l'avviso di respingimento
