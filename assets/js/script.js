@@ -58,9 +58,11 @@ if (emailsAutorizzate.includes(emailUtente)) {
             result.textContent = ('Pareggio!')
         }
 
-    }
     // se non accetta di giocare 
+    } else {
         // saluto l'utente tramite un alert
+        alert('Va bene, giocheremo la prossima volta.\nArrivederci!')
+    }
 
 // se non è nella lista invio un alert con l'avviso di respingimento
 } else {
