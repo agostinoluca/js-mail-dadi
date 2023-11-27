@@ -43,7 +43,7 @@ if (emailsAutorizzate.includes(emailUtente)) {
         // paragono i risultati casuali ottenuti
         alert(`Giocatore: ${dadoGiocatore}\nComputer: ${dadoComputer}`);
 
-        // collego una classe applicata ad un h1 dell'html per stampare il risultato in pagina
+        // collego una classe applicata ad un div dell'html per stampare il risultato in pagina
         const result = document.querySelector('.text');
 
         // definisco il vincitore
